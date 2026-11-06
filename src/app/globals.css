@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@layer base {
+  :root {
+    --background: 157 100% 50%; /* Neon Green */
+    --foreground: 0 0% 0%; /* Black */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 0%; /* Black */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%; /* Black */
+    --primary-foreground: 157 100% 50%; /* Neon Green */
+    
+    --secondary: 0 0% 13%; /* Near-black for secondary buttons */
+    --secondary-foreground: 0 0% 98%; /* White */
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+    
+    --accent: 351 100% 86%; /* Soft Pink */
+    --accent-foreground: 0 0% 0%; /* Black */
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 0%; /* Black border */
+    --input: 0 0% 100%; /* White input background */
+    --input-foreground: 0 0% 0%; /* Black input text */
+    --ring: 0 0% 0%; /* Black ring */
+
+    --radius: 0.25rem; /* Sharper corners */
+  }
+
+  .dark {
+    --background: 157 100% 50%; /* Neon Green */
+    --foreground: 0 0% 0%; /* Black */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 0%; /* Black */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%; /* Black */
+    --primary-foreground: 157 100% 50%; /* Neon Green */
+    
+    --secondary: 0 0% 13%; /* Near-black for secondary buttons */
+    --secondary-foreground: 0 0% 98%; /* White */
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+    
+    --accent: 351 100% 86%; /* Soft Pink */
+    --accent-foreground: 0 0% 0%; /* Black */
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 0%; /* Black border */
+    --input: 0 0% 100%; /* White input background */
+    --input-foreground: 0 0% 0%; /* Black input text */
+    --ring: 0 0% 0%; /* Black ring */
+    
+    --radius: 0.25rem; /* Sharper corners */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.highlight-yellow {
+    background-color: #FFF34D;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.2rem;
+}
+
+.text-secondary {
+    color: #FFFFFF;
+}
+
+.bg-secondary-accent {
+    background-color: #FFB6C1;
+}
+
+.card-sharp {
+    @apply rounded-sm border-2 shadow-md;
+}
+
+.btn-sharp {
+     @apply rounded-sm border-2;
+}
+
