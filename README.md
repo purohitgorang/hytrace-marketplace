@@ -93,8 +93,3 @@ run_hytrace.bat
 npm run dev
 ```
 Open **`http://localhost:9002`** in your browser.
-
----
-
-## 📄 License
-MIT License. Copyright (c) 2026 Gorang Purohit.
